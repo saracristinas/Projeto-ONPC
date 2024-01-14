@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(rgb(8, 8, 8), rgb(61, 61, 61));
+}
+
+
+section .about {
+    background: red;
+    z-index: -1;
+}
+
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 3rem;
+}
+
+.heading span {
+
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.about a{
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    transform: skew(-15deg);
+    text-decoration: none;
+}
+
+.about a{
+    background: transparent;
+    color: blue;
+    background: white;
+    border: blue;
+    cursor: pointer;
+}
+
+.about .botao {
+    padding: 45px;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{/*modifica a foto do brook*/
+    flex: 1 1 25rem;
+    display: inline-block;
+}
+
+.about .row .image img{/*Modifica a foto do brook no About Us*/
+    width: 500px;
+    height: auto;
+    display: inline-block;
+}
+
+.about .row .content {/*Modifica o texto do about us*/
+    flex: 1 1 45rem;
+    padding: 3rem;/*se deixar 35rem o texto fica mais pra baixo*/
+    margin-left: 50px;
+    
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border: #ccc solid 1px;
+
+}
+   
+
+.about .row .content h3 {
+    text-align: center;
+    padding: -10px;
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 180px;
+    display: inline-block;
+}
+
+.about .row .content p {
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 20px;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.about .row .content .paragrafo{
+    color: rgb(255, 255, 255);
+    z-index: -2;
+}
+
+.about {
+    padding: 10rem;
+}
+

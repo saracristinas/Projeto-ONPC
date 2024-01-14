@@ -1,0 +1,23 @@
+#background {/*background da tela inteira*/
+    position: fixed;/*mudei de fixo pra relativo*/
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#background video { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+#background::after {/*sombreamento*/
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}

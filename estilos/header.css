@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+    z-index: 2;
+    margin-left: 3px;
+
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 21px;
+    list-style: none;
+    font-family: 'Sora', sans-serif;
+}
+
+header img {
+    width: 160px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.navigation__link {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+.navigation__link:hover {
+    color:  #FF0000;
+}
+
+.navigation__link::after {  /* barrinha vermelha :) */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 60%;
+    height: 1px;
+    background: red;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation__link :hover::after {
+    transform: scale(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+
+}
+
+.navigation__social {
+    margin-left: 330px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.navigation__social svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: all 0.4s;
+}
+
+.navigation__social svg:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    cursor: pointer;
+}

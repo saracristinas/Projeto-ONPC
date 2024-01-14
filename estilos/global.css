@@ -1,0 +1,24 @@
+@import url('/estilos/background.css');
+@import url('/estilos/header.css');
+@import url('/estilos/main.css');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+     height: 100%;
+}
